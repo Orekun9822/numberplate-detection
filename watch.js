@@ -1,7 +1,7 @@
 // watch.js
 const chokidar = require('chokidar');
 const config = require('./config');
-const { enhanceImage } = require('./lib/imageProcessor');
+const { enhanceImage } = require('./lib/imageprocessor');
 const { recognizePlate } = require('./lib/anpr');
 const { checkDatabase } = require('./lib/dbHandler');
 

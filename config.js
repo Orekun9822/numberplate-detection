@@ -3,15 +3,14 @@ module.exports = {
   watchDir: '/home/share/新規/', 
   
   // 高画質化（前処理）した画像を保存するディレクトリ
-  processedDir: '/home/share/新規/', 
+  processedDir: './processed_images/', 
   
   // データベース接続情報
-  db: {
-    host: 'localhost',
-    user: 'your_db_user',
-    password: 'your_db_password',
-    database: 'your_plate_database'
-  },
+// config.js の db セクションを修正
+db: {
+    databasePath: './plate_system.db' // DB Browserで作成したファイル名に合わせてください
+    // host, user, password はもう不要です
+},
   
   // Pythonスクリプトのパス
   python: {
